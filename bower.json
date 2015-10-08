@@ -1,6 +1,6 @@
 {
   "name": "fabric8-console",
-  "version": "1.0.34",
+  "version": "1.0.54",
   "keywords": [
     "hawtio"
   ],
@@ -16,25 +16,36 @@
     "plugins"
   ],
   "dependencies": {
-    "hawtio-core": "~2.0.18",
-    "hawtio-core-navigation": "~2.0.51",
-    "hawtio-utilities": "~2.0.0",
-    "hawtio-jmx": "~2.0.53",
-    "hawtio-wiki": "~2.0.33",
-    "hawtio-kubernetes": "~2.1.34",
-    "hawtio-preferences": "~2.0.3",
-    "hawtio-template-cache": "~2.0.3",
-    "hawtio-oauth": "~2.0.26",
-    "hawtio-forge": "~2.0.24",
-    "hawtio-extension-service": "~2.0.2",
-    "hawtio-integration": "~2.0.4",
-    "apiman-manager-ui": "v1.2.0.Alpha1",
-    "hawtio-kube3d": "~2.0.8"
-  },
-  "devDependencies": {
     "bootstrap": "~3.3.1",
     "patternfly": "~1.1.2",
+    "hawtio-core": "~2.0.18",
+    "hawtio-core-navigation": "~2.0.51",
+    "hawtio-extension-service": "~2.0.2",
+    "hawtio-forge": "~2.0.26",
+    "hawtio-integration": "~2.0.4",
+    "hawtio-jmx": "~2.0.56",
+    "hawtio-kube3d": "~2.0.10",
+    "hawtio-kubernetes": "~2.1.52",
+    "hawtio-oauth": "~2.0.26",
+    "hawtio-preferences": "~2.0.3",
+    "hawtio-template-cache": "~2.0.3",
+    "hawtio-utilities": "~2.0.0",
+    "hawtio-wiki": "~2.0.33"
+  },
+  "devDependencies": {
     "hawtio-core-dts": "~2.0.0"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css"
+      ]
+    },
+    "patternfly": {
+      "main": [
+        "dist/css/patternfly.css"
+      ]
+    }
   },
   "resolutions": {
     "lodash": "~3.2.0",
